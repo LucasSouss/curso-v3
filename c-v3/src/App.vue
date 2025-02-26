@@ -1,17 +1,10 @@
 
 <template>
 
- 
-    <TheHeader v-if="showHeader"/>
-
-    <div v-show="showName">
-      Nome: {{ firstname }} <br>
-      Sobrenome: {{ lastname }}
-    </div>
-
-    <div v-if="accesslevel === 'admin'">Admin</div>
-    <div v-else-if="accesslevel === 'marketing'">Marketing</div>
-    <div v-else>Use</div>
+    <Class8/>
+    <!-- <TheHeader v-if="showHeader"/>  -->
+    <!-- <Test02/> -->
+    
   
   
 </template>
@@ -19,13 +12,17 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import TheHeader from './components/TheHeader.vue'
+import Test02 from './components/Test02.vue'
+import Class8 from './components/Class8.vue'
 
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    TheHeader
+    TheHeader,
+    Test02,
+    Class8
   },
   data() {
     return {
