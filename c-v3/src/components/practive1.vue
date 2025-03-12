@@ -74,7 +74,7 @@ export default {
                 Slytherin: ["ambition", "cunning", "leadership", "resourcefulness"]
             }
             // Contador das casas. Conta o valor que cada casa receber
-            const houseCounts = {Gryffindor: 0, Hunfflepuff: 0, Ravenclaw: 0, Slytherin: 0}
+            const houseCounts = {Gryffindor: 0, Hufflepuff: 0, Ravenclaw: 0, Slytherin: 0}
 
             this.vl.forEach(value => {
                 for(const house in houses) {
@@ -90,7 +90,7 @@ export default {
                 return ''
             }
 
-            return Object.keys(houseCounts).reduce((a,b) => (houseCounts[a] > houseCounts[b] ? a : b), "No house selected")
+            return Object.keys(houseCounts).reduce((a,b) => (houseCounts[a] > houseCounts[b] ? a : b))
         }
     }
 }
