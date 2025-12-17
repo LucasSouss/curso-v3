@@ -3,9 +3,10 @@
 
     <!-- <Class8/> -->
     <!-- <TheHeader v-if="showHeader"/>  -->
-    <!-- <Test02/> -->
-    <!-- <Practive1/> -->
-    <Eventos/>
+     <!-- <Test02/>  -->
+     <!-- <Practive1/> -->
+    <!-- <Eventos/> -->
+     <PropriedadeComputada/>
     
   
   
@@ -16,8 +17,9 @@ import HelloWorld from './components/HelloWorld.vue'
 import TheHeader from './components/TheHeader.vue'
 import Test02 from './components/Test02.vue'
 import Class8 from './components/Class8.vue'
-// import Practive1 from './components/practive1.vue';
+import Practive1 from './components/practive1.vue';
 import Eventos from './components/Eventos.vue';
+import PropriedadeComputada from './components/Propriedade-Computada.vue';
 
 
 export default {
@@ -28,7 +30,8 @@ export default {
     Test02,
     Class8,
     // Practive1,
-    Eventos
+    Eventos,
+   PropriedadeComputada
   },
   data() {
     return {

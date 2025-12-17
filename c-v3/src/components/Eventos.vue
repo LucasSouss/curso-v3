@@ -15,7 +15,11 @@ TA PASSANDO...
     </button>
 </form>
 
-<input type="text" @keyup="press">
+<input type="text" @keyup.enter="press">
+
+<button type="submit">
+Enviar
+</button>
 
 </template>
 
@@ -39,8 +43,8 @@ export default {
         onSubmit() {
             console.log('submit')
         },
-        press() {
-            console.log('digitando')
+        press($evt) {
+            console.log('digitando',  $evt)
         }
     }
 }
